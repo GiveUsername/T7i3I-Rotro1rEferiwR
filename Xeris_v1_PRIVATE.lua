@@ -178,3 +178,49 @@ local CustomFly = XER("Xeris", {
 	["Default"] = false,
 	["HoverText"] = "Automatically sets Death-TP when your HP drops to a certain amount"
 })
+
+local CustomFly = XER("Xeris", {
+	["Name"] = "Multi-Aura (WIP)",
+	["Function"] = function(callback)
+		if callback then
+			pcall(function()
+				ScriptSettings.CustomFly = true
+				while task.wait() do
+					if not ScriptSettings.CustomFly == true then return end
+					-- CODE GOES HERE
+					print("MultiAura is WIP")
+				end
+			end)
+		else
+			pcall(function()
+				ScriptSettings.CustomFly = false
+				game:GetService("Workspace").Gravity = 196.2
+			end)
+		end
+	end,
+	["Default"] = false,
+	["HoverText"] = "Attack players around you"/n"without aiming at them
+})
+
+local CustomFly = XER("Xeris", {
+	["Name"] = "Infinite Aura",
+	["Function"] = function(callback)
+		if callback then
+			pcall(function()
+				ScriptSettings.CustomFly = true
+				while task.wait() do
+					if not ScriptSettings.CustomFly == true then return end
+					-- CODE GOES HERE
+					print("Infinite Aura is WIP")
+				end
+			end)
+		else
+			pcall(function()
+				ScriptSettings.CustomFly = false
+				game:GetService("Workspace").Gravity = 196.2
+			end)
+		end
+	end,
+	["Default"] = false,
+	["HoverText"] = "Attack players from an infinite distance"
+})
