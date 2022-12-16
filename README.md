@@ -1,2 +1,2 @@
-# T7i3I-Rotro1rEferiwR
-T7i3I&amp;Rotro1rEferiwR
+# Bedwars | Xeris v1 Private
+DO NOT LEAK
