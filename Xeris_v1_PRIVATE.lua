@@ -199,7 +199,7 @@ local CustomFly = XER("Xeris", {
 		end
 	end,
 	["Default"] = false,
-	["HoverText"] = "Attack players around you"/n"without aiming at them
+	["HoverText"] = "Attack players around you".../n..."without aiming at them
 })
 
 local CustomFly = XER("Xeris", {
