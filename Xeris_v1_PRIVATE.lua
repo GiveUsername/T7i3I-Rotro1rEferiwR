@@ -155,3 +155,26 @@ infonotify("Bed-Breaker", "DISABLE AFTER USE", 5)
 	["Default"] = false,
 	["HoverText"] = "Automaticaly Break all Beds (Wait 7 Seconds)"
 })
+
+local CustomFly = XER("Xeris", {
+	["Name"] = "Auto Death-TP",
+	["Function"] = function(callback)
+		if callback then
+			pcall(function()
+				ScriptSettings.CustomFly = true
+				while task.wait() do
+					if not ScriptSettings.CustomFly == true then return end
+					-- CODE GOES HERE
+					print("Add Code")
+				end
+			end)
+		else
+			pcall(function()
+				ScriptSettings.CustomFly = false
+				game:GetService("Workspace").Gravity = 196.2
+			end)
+		end
+	end,
+	["Default"] = false,
+	["HoverText"] = "Automatically sets Death-TP when your HP drops to a certain amount"
+})
