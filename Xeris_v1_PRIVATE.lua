@@ -153,7 +153,7 @@ infonotify("Bed-Breaker", "DISABLE AFTER USE", 5)
 		end
 	end,
 	["Default"] = false,
-	["HoverText"] = "Automaticaly Break all Beds (Wait 7 Seconds)"
+	["HoverText"] = "Automatically Break all Beds (Wait 7 Seconds)"
 })
 
 local CustomFly = XER("Xeris", {
