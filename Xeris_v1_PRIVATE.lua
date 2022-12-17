@@ -224,3 +224,15 @@ local CustomFly = XER("Xeris", {
 	["Default"] = false,
 	["HoverText"] = "Attack players from an infinite distance"
 })
+
+local ClientAnticheatDisabler = Xer("Xeris", {
+    Name = "Client Anticheat Disabler",
+    Function = function(callback) 
+        if callback then
+       loadstring(game:HttpGet(('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/joke%20anticheat.lua'),true))()
+
+        end
+    end,
+    Default = false,
+    HoverText = "CLIENT ONLY | Disables Anticheat"
+})
