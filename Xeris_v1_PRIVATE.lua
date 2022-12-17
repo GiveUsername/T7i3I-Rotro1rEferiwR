@@ -6,7 +6,7 @@ local uis = game:GetService("UserInputService")
 local GuiLibrary = shared.GuiLibrary
 local ScriptSettings = {}
 local UIS = game:GetService("UserInputService")
-local COB = function(tab, argstable) 
+local XER = function(tab, argstable) 
 	return GuiLibrary["ObjectsThatCanBeSaved"][tab.."Window"]["Api"].CreateOptionsButton(argstable)
 end
 function securefunc(func)
@@ -225,7 +225,7 @@ local CustomFly = XER("Xeris", {
 	["HoverText"] = "Attack players from an infinite distance"
 })
 
-local ClientAnticheatDisabler = Xer("Xeris", {
+local ClientAnticheatDisabler = XER("Xeris", {
     Name = "Client Anticheat Disabler",
     Function = function(callback) 
         if callback then
